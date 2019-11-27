@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>empwebapp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  <param-name>java</param-name>
+  <param-value>j2eeeeeeeeeeeeeeeeeeeeeeeee</param-value>
+  </context-param>
+  
+  <servlet>
+  <servlet-name>MyFirst</servlet-name>
+  <servlet-class>com.manthan.empwebapp.servlets.MyFirstServlet</servlet-class>
+  <init-param><param-name>msg</param-name>
+  <param-value>helloo  broooo</param-value>
+   </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyFirst</servlet-name>
+  <url-pattern>/MyFirst</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Empinfo</servlet-name>
+  <servlet-class>com.manthan.empwebapp.servlets.GetEmpServlet</servlet-class>
+ 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Empinfo</servlet-name>
+  <url-pattern>/Empinfo</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>Empinfo2</servlet-name>
+  <servlet-class>com.manthan.empwebapp.servlets.GetEmp2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Empinfo2</servlet-name>
+  <url-pattern>/Empinfo2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>myjsp</servlet-name>
+ 	<jsp-file>/WEB-INF/myFisrtjsp.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>myjsp</servlet-name>
+  <url-pattern>/firstjsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>myjsp2</servlet-name>
+ 	<jsp-file>/WEB-INF/mySecondjsp.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>myjsp2</servlet-name>
+  <url-pattern>/secondjsp</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>loginform</servlet-name>
+ 	<jsp-file>/Jsp/login.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>loginform</servlet-name>
+  <url-pattern>/loginform</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>homepage</servlet-name>
+ 	<jsp-file>/Jsp/Homepage.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>homepage</servlet-name>
+  <url-pattern>/homepage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>searchpage</servlet-name>
+ 	<jsp-file>/Jsp/Search.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>searchpage</servlet-name>
+  <url-pattern>/searchpage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>addpage</servlet-name>
+ 	<jsp-file>/Jsp/addEmp.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>addpage</servlet-name>
+  <url-pattern>/addpage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>delpage</servlet-name>
+ 	<jsp-file>/Jsp/delete.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>delpage</servlet-name>
+  <url-pattern>/deljsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>updatepage</servlet-name>
+ 	<jsp-file>/Jsp/updatejsp.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>updatepage</servlet-name>
+  <url-pattern>/updatepage</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
