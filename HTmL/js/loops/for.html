@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var hobbies=['sleeping','breathing','eating','traveling','coding']
+        for(var i=0;i<hobbies.length;i++){
+            document.writeln(hobbies[i]);
+        }
+        for(var hobby of hobbies){
+            document.writeln(hobby);
+        }
+        for(var hobby in hobbies){
+            document.writeln(hobby);
+        }
+        
+        var employee={
+            name:'avi',
+            age:24,
+            hobbies:['living','confused','smoking']
+        }
+        for(var hobby in employee){
+            document.writeln(employee[hobby])
+        }
+    </script>
+</body>
+</html>

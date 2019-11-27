@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body><script>
+    var items=[{name:"lstick",id:1,price:499},
+        {name:"eliner",id:2,price:999},
+         {name:"watch",id:3,price:999},
+            {name:"trimer",id:4,price:599} ]
+    var item=items.filter(v=>v.price>500)
+    console.log(item)
+
+    var ab=items.map(items=>{
+        var i={
+            name=items.name,
+            price=items.price+100,
+            id=items.id
+        }
+    })
+    console.log(ab)
+
+    var item1=items.map(v=>{v.price+=100
+         return v})
+    console.log(item1)
+
+
+</script>
+</body>
+</html>

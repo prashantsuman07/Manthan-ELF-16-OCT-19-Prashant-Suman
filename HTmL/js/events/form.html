@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    </style>
+</head>
+<body>
+    <form name="lform">
+        <div>
+        <input type="text" name="username" placeholder="enter name">
+    </div>
+    <p id="pp" style="display: none;font-size: 12px;color:red">please enter username</p>
+    <br>
+    <div>
+            <input type="password" name="password" id="abcd" placeholder="enter password">
+            <input type="checkbox" onclick="myFunction()">Show Password
+        </div>
+        <p id="pp1" style="display: none;font-size: 12px;color:red">please enter password</p>
+        <br>
+        <div>
+               <button onclick="validateform()" type="button" name="login">LOGIN</button>
+            </div>
+
+    </form>
+   <script src="form.js"></script> 
+</body>
+</html>

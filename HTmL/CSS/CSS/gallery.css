@@ -1,0 +1,16 @@
+img{
+    width:320px;
+    height:320px;
+    border:5px solid black;
+    padding: 10px;
+    margin:7px;
+    border-radius: 5mm;
+    transition: all 1.1s;
+}
+img:hover{
+    transform: scale(1.5,1.5);
+    background-color: blue;
+}
+body{
+    background-image: url("/images/giphy.gif");
+}

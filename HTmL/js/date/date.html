@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date=new Date();
+        console.log(date.getYear());
+        console.log(date.getDate());
+        console.log(date.getMinutes());
+        var mon=date.getMonth();
+        var day=date.getDay();
+        console.log(mon);
+        console.log(date.getHours());
+        document.writeln(date.getMilliseconds());
+
+        var month=['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+        var thisM=month[mon];
+        var days=['sun','mon','tue','wed','thu','fri','sat']
+        var thisD=days[day];
+        console.log(thisM)
+        console.log(thisD)
+
+
+        var str="10";
+        var num=10;
+        if(str===num){
+            document.writeln("true");
+        }
+        else{
+            document.writeln("false");
+        }
+        var age=22;
+        var voting=age>=18?"eligible":"not-eligible";
+        document.writeln(voting);
+
+        </script>
+</body>
+</html>
