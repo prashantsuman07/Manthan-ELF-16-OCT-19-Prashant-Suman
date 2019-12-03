@@ -1,0 +1,23 @@
+
+`squid:S1989K"$Add a "try/catch" block for "close".(Ç±¢Şÿÿÿÿÿ8ä•Öì-H¡RMINORZVULNERABILITY
+_squid:S1989"#Add a "try/catch" block for "load".(¡´×Öúÿÿÿÿ8ä•Öì-HŸRMINORZVULNERABILITY
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¨ôˆÏ8ä•Öì-HRMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(¥ˆ©¹ûÿÿÿÿ8Äí„Öì-H†RMAJORZ
+CODE_SMELL
+lsquid:S1197,"8Move the array designator from the variable to the type.(ƒÁÂ8÷Ëµİì-H£RMINORZ
+CODE_SMELL
+ƒsquid:S3027"JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ëŞ°úÿÿÿÿ8Äí„Öì-H„RMAJORZ
+CODE_SMELL
+bsquid:S1989&"&Add a "try/catch" block for "getText".(¶Ş„÷ÿÿÿÿÿ8ä•Öì-H RMINORZVULNERABILITY
+squid:CommentedOutCodeLine+"<This block of commented-out lines of code should be removed.(¬¢ˆÖ8Äí„Öì-HˆRMAJORZ
+CODE_SMELL
+_squid:S1989"#Add a "try/catch" block for "load".(¡´×Öúÿÿÿÿ8ä•Öì-HRMINORZVULNERABILITY
+qsquid:S1197"8Move the array designator from the variable to the type.(‹î•üÿÿÿÿ8Äí„Öì-HƒRMINORZ
+CODE_SMELL
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 42 to the 15 allowed.(¹Â·Š8Äí„Öì-H‚RCRITICALZ
+CODE_SMELL
+~squid:S3027@"JPut single-quotes around '@' to use the faster "lastIndexOf(char)" method.(ÖäÎÖ8Ÿ˜Şì-HİRMAJORZ
+CODE_SMELL
+~squid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(ĞÇ8Äí„Öì-H‡RMAJORZ
+CODE_SMELL

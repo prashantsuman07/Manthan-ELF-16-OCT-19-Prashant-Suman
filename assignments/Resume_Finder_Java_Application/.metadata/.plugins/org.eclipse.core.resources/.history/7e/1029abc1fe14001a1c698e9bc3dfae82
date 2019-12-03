@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search resume</title>
+<style type="text/css">
+.Upload{
+width:600px;
+margin:auto;
+
+}
+</style>
+</head>
+<body>
+<a href="#"><h2 align="right">Upload Resume</h2></a>
+<div class="Upload" > 
+<h1 align="Center">Search Resume<hr></h1>
+<form action="" method="get" align="center">
+<label>Choose any file:</label>
+<input name="userfile" type="file" accept="application/pdf, application/msword"/><br><br>
+<input type="submit" name="Upload Resume">
+</form>
+</div>
+</body>
+</html>
