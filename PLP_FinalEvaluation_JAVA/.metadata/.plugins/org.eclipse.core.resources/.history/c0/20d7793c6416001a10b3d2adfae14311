@@ -1,0 +1,8 @@
+package com.manthan.resumeFinder.servlet;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+@WebServlet("/DownloadResume")
+public class DownloadResumeServlet extends HttpServlet {
+
+}

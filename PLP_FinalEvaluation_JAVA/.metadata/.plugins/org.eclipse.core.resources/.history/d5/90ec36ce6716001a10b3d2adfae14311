@@ -1,0 +1,62 @@
+<%@page import="com.manthan.resumeFinder.bean.ResumeBean"%>
+<%@page import="java.util.ArrayList"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%
+	ArrayList<ResumeBean>alBean=(ArrayList<ResumeBean>)request.getAttribute("resumeBean");
+	String msg = (String) request.getAttribute("msg");
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search resume</title>
+<style type="text/css">
+.Upload{
+width:600px;
+margin:auto;
+font-family: cursive;
+}
+</style>
+</head>
+<body>
+<a href="./UploadResumeJsp"><h2 align="right">Upload Resume</h2></a>
+<div class="Upload" > 
+<h1 align="Center" >Search Resume<hr></h1>
+<form action="./SearchResume" method="get" align="center">
+
+<input type="text" value="search" placeholder="Search here" name="search"  style="border-style: solid; width:400px"/>
+<input type="submit" value="Search Resume">
+</form>
+<% if(alBean!=null){
+		
+	%>
+	
+<table border="solid">
+<tr>
+			<td>File Name</td>
+			<td>Name</td>
+			<td>E-mail</td>
+		</tr>
+<br>
+<br>
+<br>
+	
+	<%for(ResumeBean result:alBean) {%>
+	
+		
+		<tr>
+			<td>
+			<%=result.getFilename()%></td>
+			<td><%=result.getName()%>
+			<td><%=result.getEmail()%>
+			<td><a href='./DownloadResume?url=<%=result.getFilename()%>'>download</a>
+		</tr>
+	
+	<%}%>
+	</table>
+		<% }%>
+		
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+
+ƒsquid:S3027("JPut single-quotes around '.' to use the faster "lastIndexOf(char)" method.(ëŞ°úÿÿÿÿ8ìÆâ‡í-HÃRMAJORZ
+CODE_SMELL
+’squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ï‚ÜÇÿÿÿÿÿ8Ìí›ûì-H°RMINORZ
+CODE_SMELL
+bsquid:S19891"&Add a "try/catch" block for "getText".(¶Ş„÷ÿÿÿÿÿ8ä•Öì-H³RMINORZVULNERABILITY
+‰squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 68 to the 15 allowed.(¹Â·Š8Äí„Öì-H¬RCRITICALZ
+CODE_SMELL
+ksquid:S11976"8Move the array designator from the variable to the type.(¼½»8—‡»şì-H¸RMINORZ
+CODE_SMELL
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¨ôˆÏ8ä•Öì-H²RMINORZ
+CODE_SMELL
+Usquid:S1643T"Use a StringBuilder instead.(Ô¡¶Åüÿÿÿÿ8ß­å†í-H¹RMINORZ
+CODE_SMELL
+tsquid:S2095Q"EUse try-with-resources or close this "Scanner" in a "finally" clause.(²Ûƒ‰8ß­å†í-H¶RBLOCKERZBUG
+]squid:S1989{"&Add a "try/catch" block for "forward".(²ê˜ü8¤Ñäûì-H±RMINORZVULNERABILITY
+qsquid:S1197&"8Move the array designator from the variable to the type.(‹î•üÿÿÿÿ8÷Ëµİì-HµRMINORZ
+CODE_SMELL
+_squid:S1989+"#Add a "try/catch" block for "load".(¡´×Öúÿÿÿÿ8ä•Öì-H­RMINORZVULNERABILITY
+]squid:S1989{"&Add a "try/catch" block for "forward".(²ê˜ü8¤Ñäûì-H´RMINORZVULNERABILITY
+`squid:S1989f"$Add a "try/catch" block for "close".(Ç±¢Şÿÿÿÿÿ8ìÆâ‡í-HÉRMINORZVULNERABILITY
+_squid:S1989+"#Add a "try/catch" block for "load".(¡´×Öúÿÿÿÿ8ìÆâ‡í-HÑRMINORZVULNERABILITY
+~squid:S3027N"JPut single-quotes around '@' to use the faster "lastIndexOf(char)" method.(ÖäÎÖ8ìÆâ‡í-HÈRMAJORZ
+CODE_SMELL
+ˆsquid:UselessImportCheck"GRemove this unused import 'org.apache.poi.xwpf.usermodel.XWPFDocument'.(“õÅ8«ß‹ˆí-HÅRMINORZ
+CODE_SMELL
+squid:UselessImportCheck"WRemove this unused import 'org.apache.poi.openxml4j.exceptions.InvalidFormatException'.(Èö»ûÿÿÿÿ8«ß‹ˆí-HÆRMINORZ
+CODE_SMELL
+usquid:UselessImportCheck"4Remove this unused import 'java.io.FileInputStream'.(˜³ÉÓ8«ß‹ˆí-HÇRMINORZ
+CODE_SMELL
+squid:UselessImportCheck"LRemove this unused import 'org.apache.poi.xwpf.extractor.XWPFWordExtractor'.(™Òİì8«ß‹ˆí-HÈRMINORZ
+CODE_SMELL
+…squid:UselessImportCheck"DRemove this unused import 'org.apache.poi.openxml4j.opc.OPCPackage'.(Û“æå8«ß‹ˆí-HÉRMINORZ
+CODE_SMELL

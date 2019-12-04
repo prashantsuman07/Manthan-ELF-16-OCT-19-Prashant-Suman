@@ -1,0 +1,5 @@
+package com.manthan.resumeFinder.bean;
+
+public class ResumeBean {
+
+}

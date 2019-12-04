@@ -1,0 +1,43 @@
+package com.manthan.resumeFinder.servlet;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.fileupload.FileItem;
+import org.apache.commons.fileupload.disk.DiskFileItemFactory;
+import org.apache.commons.fileupload.servlet.ServletFileUpload;
+
+import com.oreilly.servlet.MultipartRequest;
+
+ 
+@WebServlet("/UploadResume")
+public class UploadResume extends HttpServlet {
+	    @Override
+	    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+	            throws ServletException, IOException {
+	    	     try {  
+	    	    	  MultipartRequest mp=new MultipartRequest(request, "C:\\Users\\CBT\\Desktop\\upload");
+	    	         request.setAttribute("message",
+                             "Uploaded Successfully");
+	    	      } catch(Exception ex) {
+	    	    	  request.setAttribute("message",
+                              "Not Uploaded Successfully" + ex);
+	    	      }
+	    	   }
+	    	   else{
+	            request.setAttribute("message",
+	                                 "Sorry this Servlet only uploads File");
+	        }
+	     
+	        request.getRequestDispatcher("/UploadResumeJsp").forward(request, response);
+	      
+	    }
+	
+}
