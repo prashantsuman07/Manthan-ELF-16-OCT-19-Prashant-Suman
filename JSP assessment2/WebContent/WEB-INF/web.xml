@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Shopping_Application</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+   <servlet-name>registerpage</servlet-name>
+ 	<jsp-file>/JSP/Register.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>registerpage</servlet-name>
+  <url-pattern>/registerpage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>loginflipkart</servlet-name>
+ 	<jsp-file>/JSP/Login.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>loginflipkart</servlet-name>
+  <url-pattern>/loginflipkart</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+   <servlet-name>searchproduct</servlet-name>
+ 	<jsp-file>/JSP/SearchProduct.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>searchproduct</servlet-name>
+  <url-pattern>/searchproduct</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>orderproduct</servlet-name>
+ 	<jsp-file>/JSP/OrderProducts.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>orderproduct</servlet-name>
+  <url-pattern>/orderproduct1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>OrderHistory</servlet-name>
+ 	<jsp-file>/JSP/OrderHistory.jsp</jsp-file>
+  </servlet>
+   <servlet-mapping>
+  <servlet-name>OrderHistory</servlet-name>
+  <url-pattern>/OrderHistory</url-pattern>
+  </servlet-mapping>
+</web-app>
