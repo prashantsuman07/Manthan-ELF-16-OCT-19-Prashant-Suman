@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <body style="background-color: coral;">
+    
+    <h1></h1>
+    <div class="btn">
+    <button type="button" onclick="myFunction()"  style="background-color:grey;margin-left:auto;
+    margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">Set background color</button>
+    </div>
+    <script>
+    var count=0;
+    var colorarray=["red","blue","green","yellow","cyan","magenta"];
+
+    function myFunction() {
+      document.body.style.backgroundColor = colorarray[count];
+      if(count>=6){
+        document.body.style.backgroundColor = "coral";
+      return count=0; 
+      }
+      else{
+        return count++;
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+</body>
+</html>

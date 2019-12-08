@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="register-form" action="submit" name="form1">
+        <fieldset>
+            <legend>
+                User Details
+            </legend>
+            <div>
+                <label for="username">Username</label><br>
+                <input id="username" type="text" name="username" placeholder="Eg. jane_doe" required/><br>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input id="email" type="email" name="email" placeholder="Eg. abc@mail.com" required/><br>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="Enter Password" name="password" id="passw" 
+                onchange="CheckPassword(document.form1.password)" required><br>
+
+                <span style="font-size: small;" id="psswMsg" ></span>    
+            </div>
+            <div>
+                <label for="cnfpassword">Confirm Password</label><br>
+                <input type="password" placeholder="Enter Password again" name="password1" id="passw1" 
+                onchange="Validate()" required><br>
+
+                <span style="font-size: small;" id="psswMsg1" ></span>
+            </div>
+            <div>
+                <label for="website">Website</label><br>
+                <input id="website" type="url" name="website" required /><br>
+            </div>
+            <input type="submit" value="Submit"  id="myBtn "/>
+    
+        <output name="result"></output>
+    </form>
+<a href="Login.html">LOGIN</a>
+<a href="home.html">Home</a>
+<script>
+    //to validate password field
+    var userArray
+    function CheckPassword(inputtxt) 
+{ 
+var passw = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/;
+if(inputtxt.value.match(passw) && inputtxt.value.length>=6) 
+{ 
+document.getElementById('psswMsg').innerHTML="Strong Password"
+document.getElementById('psswMsg').style.color="green"
+document.getElementById('myBtn').disabled=false;
+return true;
+}
+else
+{ 
+document.getElementById('psswMsg').innerHTML="<hr>Password is weak <br> There should be atleat one upper case character <br>"+
+                                            "There should be atleast one lowercase character <br>"+
+                                            "password length must be 6 or more characters<br>"+
+                                            "There should be atleast one digit and atleast one special character <br>"
+document.getElementById('psswMsg').style.color="red"
+document.getElementById('myBtn').disabled=true;
+return false;
+}
+}
+//***************
+//to validate confirm password
+    function Validate() {
+        var password = document.getElementById("passw").value;
+        var confirmPassword = document.getElementById("passw1").value;
+        if (password != confirmPassword) {
+            document.getElementById('psswMsg1').innerHTML="Password doesnot match<br>"
+            document.getElementById('psswMsg1').style.color="red"
+            document.getElementById('myBtn').disabled=true;
+            return false;
+        }
+        document.getElementById('psswMsg1').innerHTML="password matched"
+        document.getElementById('psswMsg1').style.color="green"
+        document.getElementById('myBtn').disabled=false;
+        return true;
+    }
+</script>
+
+<script src="jquery-3.4.1.js"></script>
+<script src="register.js"></script>
+
+</body>
+</html>
